@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;1,300;1,400&family=Syne:wght@400;500;700&family=DM+Mono:wght@300;400&display=swap');
+
+* {
+  box-sizing: border-box;
+}
+
+body, html, #root {
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden; /* ScrollControls will handle scrolling */
+  background-color: #030308;
+  color: #e0e0e0;
+  font-family: 'Syne', sans-serif;
+}
+
+/* Custom Scrollbar for the ScrollControls container */
+::-webkit-scrollbar {
+  width: 6px;
+}
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+::-webkit-scrollbar-thumb {
+  background: rgba(255, 140, 0, 0.5);
+  border-radius: 10px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Cormorant Garamond', serif;
+  margin: 0;
+}
+
+/* ThreeJS Canvas */
+#canvas-container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  z-index: 1;
+}
+
+/* Overlay DOM Content */
+.overlay-container {
+  width: 100%;
+  padding: 10vh 5vw;
+  pointer-events: none; /* Let clicks pass through to canvas when not on interactive elements */
+}
+
+.section {
+  min-height: 100vh;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  pointer-events: auto; /* Re-enable pointer events for section content */
+}
+
+.hero-section {
+  align-items: flex-start;
+  max-width: 800px;
+}
+
+.hero-tag {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.6rem;
+  border: 1px solid rgba(255, 140, 0, 0.3);
+  border-radius: 100px;
+  padding: 0.4rem 1.2rem;
+  font-size: 0.7rem;
+  letter-spacing: 0.15em;
+  text-transform: uppercase;
+  color: #ff8c00;
+  background: rgba(42, 42, 42, 0.5);
+  backdrop-filter: blur(4px);
+  margin-bottom: 2rem;
+}
+
+.hero-name {
+  font-size: clamp(3rem, 5vw, 5.5rem);
+  line-height: 1.02;
+  font-weight: 300;
+  margin: 0 0 1.5rem 0;
+}
+
+.hero-name em {
+  font-style: italic;
+  color: #ff8c00;
+}
+
+.hero-summary {
+  font-size: 1.1rem;
+  line-height: 1.6;
+  color: #bbbbbb;
+  max-width: 600px;
+  margin-bottom: 2rem;
+}
+
+.btn-group {
+  display: flex;
+  gap: 1rem;
+}
+
+.btn {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  padding: 1rem 2rem;
+  font-size: 0.85rem;
+  letter-spacing: 0.1em;
+  text-transform: uppercase;
+  text-decoration: none;
+  border-radius: 100px;
+  transition: all 0.3s ease;
+  cursor: pointer;
+  pointer-events: auto;
+}
+
+.btn-primary {
+  background: #ff8c00;
+  color: #111;
+  font-weight: 600;
+  border: 1px solid #ff8c00;
+}
+
+.btn-primary:hover {
+  background: transparent;
+  color: #ff8c00;
+  box-shadow: 0 0 20px rgba(255, 140, 0, 0.4);
+}
+
+.btn-outline {
+  background: transparent;
+  color: #e0e0e0;
+  border: 1px solid #444;
+}
+
+.btn-outline:hover {
+  border-color: #ff8c00;
+  color: #ff8c00;
+}
+
+.section-title {
+  font-size: clamp(2.5rem, 4vw, 4rem);
+  font-weight: 300;
+  margin-bottom: 3rem;
+}
+.section-title em {
+  color: #ff8c00;
+  font-style: italic;
+}
+
+/* Glass Cards */
+.glass-card {
+  background: rgba(25, 25, 30, 0.4);
+  backdrop-filter: blur(12px);
+  border: 1px solid rgba(255, 255, 255, 0.05);
+  border-radius: 16px;
+  padding: 2rem;
+  transition: transform 0.3s, border-color 0.3s;
+  pointer-events: auto;
+  position: relative;
+  overflow: hidden;
+}
+.glass-card:hover {
+  border-color: rgba(255, 140, 0, 0.4);
+  transform: translateY(-5px);
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+  gap: 2rem;
+  width: 100%;
+}
+
+.tag {
+  font-family: 'DM Mono', monospace;
+  font-size: 0.75rem;
+  padding: 0.3rem 0.8rem;
+  border-radius: 100px;
+  background: rgba(255, 255, 255, 0.05);
+  color: #bbb;
+  border: 1px solid rgba(255, 255, 255, 0.1);
+  display: inline-block;
+  margin-right: 0.5rem;
+  margin-bottom: 0.5rem;
+}
+.tag-gold {
+  color: #ff8c00;
+  border-color: rgba(255, 140, 0, 0.3);
+  background: rgba(255, 140, 0, 0.05);
+}
+
+.project-name {
+  font-size: 1.5rem;
+  margin-bottom: 1rem;
+}
+.project-desc {
+  font-size: 0.9rem;
+  color: #aaa;
+  margin-bottom: 1.5rem;
+  line-height: 1.6;
+}
+
+.project-arrow {
+  color: #ff8c00;
+  text-decoration: none;
+  font-family: 'DM Mono', monospace;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-flex;
+  align-items: center;
+  transition: gap 0.3s;
+  gap: 0.5rem;
+}
+.project-arrow:hover {
+  gap: 0.8rem;
+}
+
+/* Nav */
+.nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  padding: 2rem 5vw;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  z-index: 100;
+  pointer-events: none;
+}
+.nav-logo {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 1.5rem;
+  font-style: italic;
+  color: #ff8c00;
+}
