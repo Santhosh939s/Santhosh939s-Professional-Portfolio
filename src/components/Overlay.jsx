@@ -141,7 +141,7 @@ export default function Overlay() {
             <p style={{ marginBottom: '1rem', color: '#bbb' }}>B.Tech in Computer Science and Engineering</p>
             <div className="tag">Amaravati</div>
             <div className="tag">2023 – 2027</div>
-            <div className="tag tag-gold">CGPA: 8.40/10 (Till 5th sem)</div>
+            <div className="tag tag-gold">CGPA: 8.40/10 (Till 6th sem)</div>
           </div>
           <div className="glass-card">
             <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>MGM Junior College</h3>
