@@ -188,35 +188,50 @@ export default function Overlay() {
       <section id="contact" className="section" style={{ minHeight: '80vh', marginTop: '10vh' }}>
         <h2 className="section-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)' }}>Let's build<br /><em>something</em><br />together.</h2>
         <p style={{ color: '#bbb', maxWidth: '500px', lineHeight: '1.6', marginBottom: '2rem' }}>Open to internships, collaborations, and interesting projects. Drop a message — I'd love to connect and create.</p>
-        <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '400px' }}>
-          <a href="mailto:ms9390034298@gmail.com" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div>
-              <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>Email</div>
-              <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>ms9390034298@gmail.com</div>
+        <div style={{ display: 'flex', flexWrap: 'wrap', gap: '4rem', justifyContent: 'space-between', alignItems: 'flex-start' }}>
+          <div style={{ flex: '1', minWidth: '300px', maxWidth: '400px' }}>
+            <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem' }}>
+              <a href="mailto:ms9390034298@gmail.com" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>Email</div>
+                  <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>ms9390034298@gmail.com</div>
+                </div>
+                <div style={{ color: '#ff8c00' }}>↗</div>
+              </a>
+              <a href="tel:+919391220057" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>Phone</div>
+                  <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>+91-9391220057</div>
+                </div>
+                <div style={{ color: '#ff8c00' }}>↗</div>
+              </a>
+              <a href="https://www.linkedin.com/in/santhosh939s/" target="_blank" rel="noreferrer" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>LinkedIn</div>
+                  <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>santhosh939s</div>
+                </div>
+                <div style={{ color: '#ff8c00' }}>↗</div>
+              </a>
+              <a href="https://github.com/Santhosh939s" target="_blank" rel="noreferrer" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
+                <div>
+                  <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>GitHub</div>
+                  <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>Santhosh939s</div>
+                </div>
+                <div style={{ color: '#ff8c00' }}>↗</div>
+              </a>
             </div>
-            <div style={{ color: '#ff8c00' }}>↗</div>
-          </a>
-          <a href="tel:+919391220057" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div>
-              <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>Phone</div>
-              <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>+91-9391220057</div>
+          </div>
+          
+          <div className="glass-card" style={{ flex: '1', minWidth: '300px', maxWidth: '400px', textAlign: 'center', display: 'flex', flexDirection: 'column', justifyContent: 'center', alignItems: 'center', gap: '1.5rem', border: '1px solid rgba(255,140,0,0.2)', background: 'linear-gradient(145deg, rgba(25,25,30,0.6) 0%, rgba(255,140,0,0.05) 100%)' }}>
+            <div style={{ width: '80px', height: '80px', borderRadius: '50%', background: 'rgba(255, 140, 0, 0.1)', display: 'flex', alignItems: 'center', justifyContent: 'center', border: '1px solid rgba(255,140,0,0.3)', boxShadow: '0 0 30px rgba(255,140,0,0.2)' }}>
+              <span style={{ fontSize: '2.5rem' }}>🚀</span>
             </div>
-            <div style={{ color: '#ff8c00' }}>↗</div>
-          </a>
-          <a href="https://www.linkedin.com/in/santhosh939s/" target="_blank" rel="noreferrer" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
             <div>
-              <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>LinkedIn</div>
-              <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>santhosh939s</div>
+              <h3 style={{ fontSize: '1.2rem', marginBottom: '0.5rem', color: '#e0e0e0' }}>Status: Available</h3>
+              <p style={{ fontSize: '0.9rem', color: '#aaa', lineHeight: '1.5' }}>Currently seeking SDE intern roles and freelance web development opportunities.</p>
             </div>
-            <div style={{ color: '#ff8c00' }}>↗</div>
-          </a>
-          <a href="https://github.com/Santhosh939s" target="_blank" rel="noreferrer" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
-            <div>
-              <div style={{ fontSize: '0.7rem', textTransform: 'uppercase', letterSpacing: '0.1em', color: '#bbb', marginBottom: '0.3rem' }}>GitHub</div>
-              <div style={{ color: '#e0e0e0', fontSize: '1rem' }}>Santhosh939s</div>
-            </div>
-            <div style={{ color: '#ff8c00' }}>↗</div>
-          </a>
+            <a href="mailto:ms9390034298@gmail.com" className="btn btn-primary" style={{ width: '100%', padding: '0.8rem' }}>Say Hello</a>
+          </div>
         </div>
 
         <div style={{ marginTop: '5rem', textAlign: 'center', color: '#bbb', fontSize: '0.8rem', letterSpacing: '0.1em' }}>

@@ -26,15 +26,19 @@ export default function SpaceScene() {
     // Animate spheres passing by
     if (sphere1Ref.current) {
       sphere1Ref.current.position.y = scrollOffset * 10;
-      sphere1Ref.current.rotation.x += delta;
+      sphere1Ref.current.rotation.x += delta * 0.5;
+      sphere1Ref.current.rotation.y += delta * 0.2;
     }
     if (sphere2Ref.current) {
       sphere2Ref.current.position.y = -2 + scrollOffset * 15;
-      sphere2Ref.current.rotation.y += delta;
+      sphere2Ref.current.rotation.y += delta * 0.8;
+      sphere2Ref.current.rotation.x += delta * 0.3;
     }
     if (sphere3Ref.current) {
-      sphere3Ref.current.position.y = 3 - scrollOffset * 5;
+      sphere3Ref.current.position.y = Math.cos(state.clock.elapsedTime * 0.5) * 1.5;
+      sphere3Ref.current.position.x = Math.sin(state.clock.elapsedTime * 0.5) * 1.5;
       sphere3Ref.current.rotation.z += delta;
+      sphere3Ref.current.rotation.x += delta * 0.5;
     }
   });
 

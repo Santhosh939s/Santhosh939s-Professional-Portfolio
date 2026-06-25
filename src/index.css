@@ -167,6 +167,7 @@ h1, h2, h3, h4, h5, h6 {
 .glass-card:hover {
   border-color: rgba(255, 140, 0, 0.4);
   transform: translateY(-5px);
+  box-shadow: 0 10px 30px -10px rgba(255, 140, 0, 0.2);
 }
 
 .grid {
@@ -248,4 +249,18 @@ h1, h2, h3, h4, h5, h6 {
 
 .nav a:hover {
   color: #ff8c00 !important;
+}
+
+@media (max-width: 768px) {
+  .hero-name {
+    font-size: clamp(3rem, 12vw, 4rem);
+  }
+  .nav {
+    flex-direction: column;
+    padding: 2rem 5vw;
+    gap: 1rem;
+  }
+  .nav > div {
+    gap: 1.5rem !important;
+  }
 }
