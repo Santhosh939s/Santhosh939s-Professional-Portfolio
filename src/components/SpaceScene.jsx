@@ -46,7 +46,7 @@ export default function SpaceScene() {
       
       <Stars ref={starsRef} radius={100} depth={50} count={5000} factor={4} saturation={0} fade speed={1} />
       
-      <Float speed={2} rotationIntensity={1} floatIntensity={2} position={[2, 0, -5]}>
+      <Float speed={2} rotationIntensity={1} floatIntensity={2} position={[3.5, -0.8, -5]}>
         <Sphere ref={sphere1Ref} args={[1, 64, 64]} scale={1.5}>
           <MeshDistortMaterial
             color="#ff8c00"
@@ -72,7 +72,7 @@ export default function SpaceScene() {
         </Sphere>
       </Float>
 
-      <Float speed={1} rotationIntensity={0.5} floatIntensity={3} position={[4, 3, -15]}>
+      <Float speed={1} rotationIntensity={0.5} floatIntensity={3} position={[2, 2.5, -8]}>
         <Sphere ref={sphere3Ref} args={[1, 64, 64]} scale={0.5}>
           <MeshDistortMaterial
             color="#4400ff"

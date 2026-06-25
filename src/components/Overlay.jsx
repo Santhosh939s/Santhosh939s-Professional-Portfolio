@@ -16,7 +16,7 @@ export default function Overlay() {
         <p className="hero-summary">Computer Science student passionate about web development and software engineering. Experienced in building full-stack applications with AI/ML integrations, and crafting secure, responsive platforms.</p>
         <div className="btn-group">
           <a href="#projects" className="btn btn-primary">View Projects</a>
-          <a href="mailto:ms9390034298@gmail.com" className="btn btn-outline">Get In Touch</a>
+          <a href="#contact" className="btn btn-outline">Get In Touch</a>
         </div>
       </section>
 
@@ -180,7 +180,7 @@ export default function Overlay() {
       </section>
 
       {/* Contact Section */}
-      <section className="section" style={{ minHeight: '80vh', marginTop: '10vh' }}>
+      <section id="contact" className="section" style={{ minHeight: '80vh', marginTop: '10vh' }}>
         <h2 className="section-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)' }}>Let's build<br /><em>something</em><br />together.</h2>
         <p style={{ color: '#bbb', maxWidth: '500px', lineHeight: '1.6', marginBottom: '2rem' }}>Open to internships, collaborations, and interesting projects. Drop a message — I'd love to connect and create.</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '400px' }}>

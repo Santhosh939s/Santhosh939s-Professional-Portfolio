@@ -94,13 +94,13 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.1rem;
   line-height: 1.6;
   color: #bbbbbb;
-  max-width: 600px;
+  max-width: 500px;
   margin-bottom: 2rem;
 }
 
 .btn-group {
   display: flex;
-  gap: 1rem;
+  gap: 1.5rem;
 }
 
 .btn {
@@ -226,7 +226,7 @@ h1, h2, h3, h4, h5, h6 {
   top: 0;
   left: 0;
   width: 100%;
-  padding: 2rem 5vw;
+  padding: 3rem 5vw 2rem 5vw;
   display: flex;
   justify-content: space-between;
   align-items: center;
