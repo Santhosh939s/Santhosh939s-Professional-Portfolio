@@ -9,7 +9,7 @@ function App() {
     <div id="canvas-container">
       <Canvas camera={{ position: [0, 0, 5], fov: 75 }}>
         {/* ScrollControls allows us to map scroll events to the 3D scene and HTML */}
-        <ScrollControls pages={7.5} damping={0.25}>
+        <ScrollControls pages={8.5} damping={0.25}>
           {/* 3D Scene Layer */}
           <Scroll>
             <SpaceScene />

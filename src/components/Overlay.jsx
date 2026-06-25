@@ -6,11 +6,8 @@ export default function Overlay() {
   const scrollToId = (e, id) => {
     e.preventDefault();
     const element = document.getElementById(id);
-    if (element && scroll && scroll.el) {
-      scroll.el.scrollTo({
-        top: element.offsetTop,
-        behavior: 'smooth'
-      });
+    if (element) {
+      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
     }
   };
 
