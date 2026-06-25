@@ -26,15 +26,27 @@ export default function Overlay() {
         <div className="grid">
           
           <div className="glass-card" style={{ gridColumn: '1 / -1' }}>
-            <h3 className="project-name" style={{ fontSize: '2rem' }}>Rapid Crisis Response <span style={{fontSize: '1rem', color: '#ff8c00'}}>★ Featured</span></h3>
-            <p className="project-desc" style={{ maxWidth: '800px' }}>A full-stack real-time emergency response platform connecting guests, field staff, and commanders during crisis situations. Features responsive role-based dashboards for SOS reporting, evacuation tracking, and incident monitoring.</p>
+            <h3 className="project-name" style={{ fontSize: '2rem' }}>MSK Code Arena <span style={{fontSize: '1rem', color: '#ff8c00'}}>★ Featured</span></h3>
+            <p className="project-desc" style={{ maxWidth: '800px' }}>An intelligent platform that automatically transforms raw text problem statements from any source into a structured LeetCode-style coding workspace. Features a custom code execution engine, Monaco Editor integration, hidden test-case evaluation, and AI-powered parsing for frictionless DSA practice.</p>
             <div style={{ marginBottom: '1.5rem' }}>
-              <span className="tag tag-gold">Next.js</span>
-              <span className="tag">Firebase Auth</span>
-              <span className="tag">Realtime DB</span>
-              <span className="tag">Leaflet Maps</span>
-              <span className="tag">REST API</span>
+              <span className="tag tag-gold">Gemini API</span>
+              <span className="tag">React</span>
+              <span className="tag">Monaco Editor</span>
+              <span className="tag">Full Stack</span>
+              <span className="tag">DSA</span>
             </div>
+            <a href="https://msk-code-arena.vercel.app/" target="_blank" rel="noreferrer" className="project-arrow">View Live Platform →</a>
+          </div>
+
+          <div className="glass-card">
+            <h3 className="project-name">Rapid Crisis Response</h3>
+            <p className="project-desc">A full-stack real-time emergency response platform connecting guests, field staff, and commanders during crisis situations.</p>
+            <div>
+              <span className="tag tag-gold">Next.js</span>
+              <span className="tag">Firebase</span>
+              <span className="tag">Leaflet</span>
+            </div>
+            <br />
             <a href="https://github.com/Santhosh939s/Rapid-Crisis-Response" target="_blank" rel="noreferrer" className="project-arrow">View GitHub Repo →</a>
           </div>
 
