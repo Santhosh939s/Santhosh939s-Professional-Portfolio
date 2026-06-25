@@ -1,14 +1,7 @@
-import { useScroll } from '@react-three/drei';
-
 export default function Overlay() {
-  const scroll = useScroll();
-
   const scrollToId = (e, id) => {
     e.preventDefault();
-    const element = document.getElementById(id);
-    if (element) {
-      element.scrollIntoView({ behavior: 'smooth', block: 'start' });
-    }
+    window.dispatchEvent(new CustomEvent('scrollToSection', { detail: id }));
   };
 
   return (
