@@ -4,8 +4,8 @@ export default function Overlay() {
       <nav className="nav">
         <div className="nav-logo">Maddila Santhosh Kumar</div>
         <div style={{ display: 'flex', gap: '2rem' }}>
-          <a href="https://github.com/Santhosh939s" target="_blank" rel="noreferrer" style={{color: '#bbbbbb', textDecoration: 'none', fontFamily: 'DM Mono', fontSize: '0.8rem', letterSpacing: '0.1em', textTransform: 'uppercase'}}>GitHub</a>
-          <a href="https://www.linkedin.com/in/santhosh939s/" target="_blank" rel="noreferrer" style={{color: '#bbbbbb', textDecoration: 'none', fontFamily: 'DM Mono', fontSize: '0.8rem', letterSpacing: '0.1em', textTransform: 'uppercase'}}>LinkedIn</a>
+          <a href="https://github.com/Santhosh939s" target="_blank" rel="noreferrer" style={{ color: '#bbbbbb', textDecoration: 'none', fontFamily: 'DM Mono', fontSize: '0.8rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>GitHub</a>
+          <a href="https://www.linkedin.com/in/santhosh939s/" target="_blank" rel="noreferrer" style={{ color: '#bbbbbb', textDecoration: 'none', fontFamily: 'DM Mono', fontSize: '0.8rem', letterSpacing: '0.1em', textTransform: 'uppercase' }}>LinkedIn</a>
         </div>
       </nav>
 
@@ -24,9 +24,9 @@ export default function Overlay() {
       <section className="section" id="projects" style={{ marginTop: '15vh' }}>
         <h2 className="section-title">Selected <em>Projects</em></h2>
         <div className="grid">
-          
+
           <div className="glass-card" style={{ gridColumn: '1 / -1' }}>
-            <h3 className="project-name" style={{ fontSize: '2rem' }}>MSK Code Arena <span style={{fontSize: '1rem', color: '#ff8c00'}}>★ Featured</span></h3>
+            <h3 className="project-name" style={{ fontSize: '2rem' }}>MSK Code Arena <span style={{ fontSize: '1rem', color: '#ff8c00' }}>★ Featured</span></h3>
             <p className="project-desc" style={{ maxWidth: '800px' }}>An intelligent platform that automatically transforms raw text problem statements from any source into a structured LeetCode-style coding workspace. Features a custom code execution engine, Monaco Editor integration, hidden test-case evaluation, and AI-powered parsing for frictionless DSA practice.</p>
             <div style={{ marginBottom: '1.5rem' }}>
               <span className="tag tag-gold">Gemini API</span>
@@ -102,86 +102,86 @@ export default function Overlay() {
       </section>
 
       {/* Skills */}
-      <section className="section" style={{marginTop: '15vh'}}>
+      <section className="section" style={{ marginTop: '15vh' }}>
         <h2 className="section-title">Technical <em>Skills</em></h2>
         <div className="grid">
           <div className="glass-card">
-            <h3 style={{marginBottom: '1rem', color: '#ff8c00'}}>Frontend</h3>
-            <p style={{color: '#bbb', lineHeight: '1.6'}}>HTML5 · CSS · JavaScript<br/>Next.js · React</p>
+            <h3 style={{ marginBottom: '1rem', color: '#ff8c00' }}>Frontend</h3>
+            <p style={{ color: '#bbb', lineHeight: '1.6' }}>HTML5 · CSS · JavaScript<br />Next.js · React</p>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '1rem', color: '#ff8c00'}}>Backend & DB</h3>
-            <p style={{color: '#bbb', lineHeight: '1.6'}}>Node.js · Express.js · PHP<br/>MySQL · MongoDB · Firebase</p>
+            <h3 style={{ marginBottom: '1rem', color: '#ff8c00' }}>Backend & DB</h3>
+            <p style={{ color: '#bbb', lineHeight: '1.6' }}>Node.js · Express.js · PHP<br />MySQL · MongoDB · Firebase</p>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '1rem', color: '#ff8c00'}}>Languages</h3>
-            <p style={{color: '#bbb', lineHeight: '1.6'}}>Java · Python<br/>C · C++</p>
+            <h3 style={{ marginBottom: '1rem', color: '#ff8c00' }}>Languages</h3>
+            <p style={{ color: '#bbb', lineHeight: '1.6' }}>Java · Python<br />C · C++</p>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '1rem', color: '#ff8c00'}}>Tools</h3>
-            <p style={{color: '#bbb', lineHeight: '1.6'}}>Git · GitHub · VS Code<br/>Postman · Wireshark</p>
+            <h3 style={{ marginBottom: '1rem', color: '#ff8c00' }}>Tools</h3>
+            <p style={{ color: '#bbb', lineHeight: '1.6' }}>Git · GitHub · VS Code<br />Postman · Wireshark</p>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '1rem', color: '#ff8c00'}}>Core Subjects</h3>
-            <p style={{color: '#bbb', lineHeight: '1.6'}}>DBMS · Operating Systems<br/>Computer Networks · OOPs</p>
+            <h3 style={{ marginBottom: '1rem', color: '#ff8c00' }}>Core Subjects</h3>
+            <p style={{ color: '#bbb', lineHeight: '1.6' }}>DBMS · Operating Systems<br />Computer Networks · OOPs</p>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '1rem', color: '#ff8c00'}}>AI / ML Concepts</h3>
-            <p style={{color: '#bbb', lineHeight: '1.6'}}>Minimax Algorithm<br/>Alpha-Beta Pruning<br/>Traffic Analysis Models</p>
+            <h3 style={{ marginBottom: '1rem', color: '#ff8c00' }}>AI / ML Concepts</h3>
+            <p style={{ color: '#bbb', lineHeight: '1.6' }}>Minimax Algorithm<br />Alpha-Beta Pruning<br />Traffic Analysis Models</p>
           </div>
         </div>
       </section>
 
       {/* Education & Certs */}
-      <section className="section" style={{marginTop: '15vh'}}>
+      <section className="section" style={{ marginTop: '15vh' }}>
         <h2 className="section-title">Educational <em>Background</em></h2>
         <div className="grid">
           <div className="glass-card">
-            <h3 style={{marginBottom: '0.5rem', color: '#ff8c00'}}>SRM University AP</h3>
-            <p style={{marginBottom: '1rem', color: '#bbb'}}>B.Tech in Computer Science and Engineering</p>
+            <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>SRM University AP</h3>
+            <p style={{ marginBottom: '1rem', color: '#bbb' }}>B.Tech in Computer Science and Engineering</p>
             <div className="tag">Amaravati</div>
             <div className="tag">2023 – 2027</div>
-            <div className="tag tag-gold">CGPA: 8.31/10 (Till 5th sem)</div>
+            <div className="tag tag-gold">CGPA: 8.40/10 (Till 5th sem)</div>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '0.5rem', color: '#ff8c00'}}>MGM Junior College</h3>
-            <p style={{marginBottom: '1rem', color: '#bbb'}}>Intermediate (MPC) - Class XII</p>
+            <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>MGM Junior College</h3>
+            <p style={{ marginBottom: '1rem', color: '#bbb' }}>Intermediate (MPC) - Class XII</p>
             <div className="tag">Tirupati</div>
             <div className="tag">2021 – 2023</div>
             <div className="tag tag-gold">Grade: 94.8%</div>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '0.5rem', color: '#ff8c00'}}>MGM EM High School</h3>
-            <p style={{marginBottom: '1rem', color: '#bbb'}}>Secondary Education - Class X</p>
+            <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>MGM EM High School</h3>
+            <p style={{ marginBottom: '1rem', color: '#bbb' }}>Secondary Education - Class X</p>
             <div className="tag">Tirupati</div>
             <div className="tag">2020 – 2021</div>
             <div className="tag tag-gold">Grade: 99.8%</div>
           </div>
         </div>
 
-        <h2 className="section-title" style={{marginTop: '15vh'}}>Global <em>Certifications</em></h2>
+        <h2 className="section-title" style={{ marginTop: '15vh' }}>Global <em>Certifications</em></h2>
         <div className="grid">
           <div className="glass-card">
-            <h3 style={{marginBottom: '0.5rem', color: '#ff8c00'}}>Oracle Java SE 17 Developer</h3>
-            <p style={{marginBottom: '1rem', color: '#bbb'}}>Oracle (1Z0-829)</p>
+            <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>Oracle Java SE 17 Developer</h3>
+            <p style={{ marginBottom: '1rem', color: '#bbb' }}>Oracle (1Z0-829)</p>
             <a href="https://catalog-education.oracle.com/ords/certview/sharebadge?id=8769B1A027E8E4706E07E51DD15F7DB45402081AF337C4BDFE8AF3E2BEB6BD51" target="_blank" rel="noreferrer" className="project-arrow">View Certificate →</a>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '0.5rem', color: '#ff8c00'}}>SAP Generative AI Developer</h3>
-            <p style={{marginBottom: '1rem', color: '#bbb'}}>SAP Certified</p>
+            <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>SAP Generative AI Developer</h3>
+            <p style={{ marginBottom: '1rem', color: '#bbb' }}>SAP Certified</p>
             <a href="https://drive.google.com/file/d/1bKvi9haLrB8BtUodWOXlZtU4eO7zOeUI/view?usp=sharing" target="_blank" rel="noreferrer" className="project-arrow">View Certificate →</a>
           </div>
           <div className="glass-card">
-            <h3 style={{marginBottom: '0.5rem', color: '#ff8c00'}}>Quantum Valley Hackathon 2025</h3>
-            <p style={{marginBottom: '1rem', color: '#bbb'}}>Hackathon Event</p>
+            <h3 style={{ marginBottom: '0.5rem', color: '#ff8c00' }}>Quantum Valley Hackathon 2025</h3>
+            <p style={{ marginBottom: '1rem', color: '#bbb' }}>Hackathon Event</p>
             <a href="https://drive.google.com/file/d/1X1EQSnwGytrIxBtmSEVcOU93KRPeLh1E/view" target="_blank" rel="noreferrer" className="project-arrow">View Document →</a>
           </div>
         </div>
       </section>
-      
+
       {/* Contact Section */}
-      <section className="section" style={{minHeight: '80vh', marginTop: '10vh'}}>
-        <h2 className="section-title" style={{fontSize: 'clamp(3rem, 6vw, 5rem)'}}>Let's build<br/><em>something</em><br/>together.</h2>
+      <section className="section" style={{ minHeight: '80vh', marginTop: '10vh' }}>
+        <h2 className="section-title" style={{ fontSize: 'clamp(3rem, 6vw, 5rem)' }}>Let's build<br /><em>something</em><br />together.</h2>
         <p style={{ color: '#bbb', maxWidth: '500px', lineHeight: '1.6', marginBottom: '2rem' }}>Open to internships, collaborations, and interesting projects. Drop a message — I'd love to connect and create.</p>
         <div style={{ display: 'flex', flexDirection: 'column', gap: '1rem', maxWidth: '400px' }}>
           <a href="mailto:ms9390034298@gmail.com" className="glass-card" style={{ textDecoration: 'none', padding: '1.5rem', display: 'flex', justifyContent: 'space-between', alignItems: 'center' }}>
@@ -213,7 +213,7 @@ export default function Overlay() {
             <div style={{ color: '#ff8c00' }}>↗</div>
           </a>
         </div>
-        
+
         <div style={{ marginTop: '5rem', textAlign: 'center', color: '#bbb', fontSize: '0.8rem', letterSpacing: '0.1em' }}>
           © 2025 · Crafted with code & creativity
         </div>
