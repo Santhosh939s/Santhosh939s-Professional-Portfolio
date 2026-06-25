@@ -1,4 +1,19 @@
+import { useScroll } from '@react-three/drei';
+
 export default function Overlay() {
+  const scroll = useScroll();
+
+  const scrollToId = (e, id) => {
+    e.preventDefault();
+    const element = document.getElementById(id);
+    if (element && scroll && scroll.el) {
+      scroll.el.scrollTo({
+        top: element.offsetTop,
+        behavior: 'smooth'
+      });
+    }
+  };
+
   return (
     <div className="overlay-container">
       <nav className="nav">
@@ -15,8 +30,8 @@ export default function Overlay() {
         <h1 className="hero-name">Maddila<br /><em>Santhosh Kumar</em></h1>
         <p className="hero-summary">Computer Science student passionate about web development and software engineering. Experienced in building full-stack applications with AI/ML integrations, and crafting secure, responsive platforms.</p>
         <div className="btn-group">
-          <a href="#projects" className="btn btn-primary">View Projects</a>
-          <a href="#contact" className="btn btn-outline">Get In Touch</a>
+          <a href="#projects" onClick={(e) => scrollToId(e, 'projects')} className="btn btn-primary">View Projects</a>
+          <a href="#contact" onClick={(e) => scrollToId(e, 'contact')} className="btn btn-outline">Get In Touch</a>
         </div>
       </section>
 
